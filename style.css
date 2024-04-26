@@ -1,0 +1,120 @@
+body{
+    font-family: "Sedgwick Ave Display", cursive;
+    background-color: #00224D;
+}
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+    color: #D21312;
+    font-size: 62px;
+    margin: 5px;
+
+}
+.subtitulo{
+    color: #D21312;
+    font-size: 32px;
+}
+
+.tarjetas{
+    display: flex;
+    gap: 10px;
+
+}
+.tarjeta-de-mokepon{
+    width: 170px;
+    height: 100px;
+    background-color: #F15A59;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid #D21312;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00224D;
+}
+.tarjeta-de-mokepon img{
+    width: 80px;
+}
+input{
+    display: none;
+}
+input:checked + label{
+    background-color: #D21312;
+}
+#boton-mascota{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid #F15A59;
+    margin: 10px;
+    color: #F15A59;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+}
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+.boton-de-ataque{
+    background-color: #F15A59;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 50px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    color: #00224D;;
+}
+
+#mensajes{
+    width: 280px;
+    background:  #D21312;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#boton-reiniciar{
+    border: none;
+    border-radius: 20px;
+    color: #00224D;
+    background-color: transparent;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+}
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+    color: #F15A59;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+}
+#vidas-jugador, #vidas-enemigo{
+    font-size: 50px;
+    margin: 0;
+}
+@media(max-width: 360px){
+    .tarjetas{
+        display: flex;
+        flex-direction: column;
+    }
+    .botones-de-ataque{
+        display: flex;
+        flex-direction: column;
+    }
+    .boton-de-ataque{
+        margin-top: 20px;
+    }
+}
